@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-log in or sign up</title>
+</head>
+<style>
+    html {
+        /* display: flex; */
+        /* justify-content: center; */
+        height: 100vh;
+        width: 100vw;
+        background-color: #f0f2f5;
+        
+    }
+
+
+    * {
+        text-decoration: none;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .user {
+        display: flex;
+        /* border: 2px solid red; */
+        width: 396px;
+        height: 345px;
+        margin-top: 10%;
+        flex-direction: column;
+    }
+
+    .user h2 {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px 25px;
+        margin-bottom: 2px;
+        font-weight: normal;
+    }
+
+    .user p {
+
+        margin: 5px 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: #606770;
+
+    }
+
+    .acc {
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 396px;
+        height: 200px
+    }
+
+    .profile {
+        /* border: 2px solid black; */
+        background-color: #fff;
+        text-align: center;
+        width: 164px;
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0.5px 0.5px 3px 1px gray;
+
+    }
+
+    .profile p {
+        padding-top: 5px;
+        color: #333333;
+
+    }
+
+    .newp {
+        /* border: 2px solid black; */
+        background-color: #fff;
+        text-align: center;
+        width: 164px;
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0.5px 0.5px 3px 1px gray;
+
+
+
+    }
+
+    .newp p {
+        padding-top: 5px;
+        color: #1877f2;
+    }
+
+    .right {
+        margin-top: 10%;
+    }
+
+    .login {
+        /* border: 2px solid red; */
+
+        width: 396px;
+        height: 345px;
+        box-sizing: border-box;
+        /* box-shadow: 5px ; */
+        border-radius: 3%;
+        background-color: #fff;
+        text-align: center;
+        box-shadow: 0.5px 0.5px 3px 1px gray;
+
+    }
+
+
+    .img1 {
+        /* border: 2px solid green; */
+        display: flex;
+        align-self: flex-start;
+        width: 200px;
+        
+
+    }
+
+    .img2 {
+        /* border: 2px solid blue; */
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        
+    }
+
+    .img3 {
+        /* border: 2px solid blue; */
+        width: 164px;
+        height: 160px;
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .l1 input {
+
+        margin: 10px 10px;
+
+        width: 350px;
+        height: 25px;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid gray;
+
+    }
+
+    #hr {
+
+        width: 365px;
+    }
+
+
+
+    #q input {
+
+        padding: 13px;
+        padding-left: 10px;
+
+    }
+
+    #fa {
+        /* border: 2px solid red; */
+        display: inline-block;
+        margin-top: 18px;
+        margin-bottom: 8px;
+
+    }
+
+    #btn a {
+
+        background-color: #1877f2;
+        color: #fff;
+        display: inline-block;
+        padding: 15px 160px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    #btn2 a {
+        background-color: #42b72a;
+        color: #fff;
+        margin-top: ;
+        display: inline-block;
+        padding: 15px 50px;
+        border-radius: 5px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    #fa a {
+
+        color: #1877f2;
+    }
+    .bottom{
+        border-radius: 8px;
+        box-sizing: border-box;
+       align-self: flex-end;
+        /* border: 2px solid red; */
+        background-color: #fff;
+        width: 100vw;
+        position: relative;
+        min-height: 150px;    
+    }
+    .bottom p{
+        font-size: small;
+        padding: 5px 200px;
+        color: gray;
+        line-height: 20px;
+    }
+    .bottom hr{
+        width: 50vh;
+    }
+     #profile:hover, #newp:hover{
+        box-shadow: 0.5px 0.5px 6px 5px gray;
+
+
+    }
+    #btn2 a:hover{
+        background-color: #30961b;
+    }
+    #btn3:hover ,#fa a:hover{
+        text-decoration: underline;
+
+    }
+</style>
+
+<body>
+    
+    <div class="container">
+
+        <div class="user" >
+            <img src="fb.svg" alt="" class="img1">
+            <h2>
+                Recent logins</h2>
+            <p>Click your picture or add an account.</p>
+
+            <div class="acc">
+
+                <div class="profile" id="profile">
+                    <a href="#">
+                        <img src="profile.jpg" class="img2">
+                        <p>Sumanth</p>
+                    </a>
+                </div>
+
+                <div class="newp" id="newp">
+                    <a href="#">
+                        <img src="new.png" class="img3">
+                        <p>Add Account</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="login" id="login">
+
+                <div class="l1" id="q">
+                    <input type="email" id="email" name="email" placeholder="Email address or phone number">
+                </div>
+
+                <div class="l1" id="q">
+                    <input type="password" id="pass" name="pass" placeholder="Password"></div>
+
+                <div class="l1" id="btn">
+                    <a href="#" >Login in</a>
+                </div>
+
+                <div id="fa">
+                    <a href="#">Forgotten account?</a>
+                </div>
+
+                <hr id="hr">
+
+                <div class="l1" id="btn2">
+                    <a href="#" id="create">Create New Account</a>
+                </div>
+
+            </div>
+            <div class="rbottom" style="text-align: center;">
+                <p><a href="#" style="color: black;" id="btn3"><strong>Create a Page</strong></a> for a celebrity, band or
+                    business.</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque iste nihil sint quos, libero porro doloremque quod omnis. Quis soluta aliquid dolor cum fugiat, repudiandae provident nulla doloremque eveniet voluptatum libero praesentium iusto consequuntur harum? Illum sequi laudantium itaque!
+                </p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit labore, magni modi facere sit, error, tempora laudantium suscipit autem dolore ab optio accusantium iusto. Reiciendis recusandae quidem tenetur consequatur.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
